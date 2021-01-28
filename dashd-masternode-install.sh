@@ -240,7 +240,7 @@ function create_key() {
 	sleep 3
 	echo -ne '\n'
     echo -e "${GREEN}* Done${NONE}";
-#   sleep 30
+   sleep 60
     COINKEY=$($COIN_PATH$COIN_CLI createmasternodekey)
   fi
   $COIN_PATH$COIN_CLI stop
@@ -397,7 +397,7 @@ echo -e "${GREEN}$PROJECT_NAME Fee Info: ${NC}"
 $COIN_CLI getfeeinfo 100
 echo -e "\n${BLUE}=======================================================================================================${NC}\n"
 EOF
-chmod +x /root/dashd-fee-info
+chmod +x /root/dashdiamond-fee-info
 
 cat << EOF > /root/dashdiamond-networkinfo
 echo -e "\n\n${BLUE}=======================================================================================================${NC}\n"
