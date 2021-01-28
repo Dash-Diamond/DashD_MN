@@ -36,7 +36,7 @@ Reward structure:
 
 To install Dashdiamond(DASHD) Masternode use the following command:
 
-`bash <( curl -sL https://raw.githubusercontent.com/Dash-Diamond/DashD_MN/master/dashd-masternode-install.sh`)
+`bash <( curl -sL https://raw.githubusercontent.com/Dash-Diamond/DashD_MN/master/dashd-masternode-install.sh)`
 
 - Enjoy
 
