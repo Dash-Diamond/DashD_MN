@@ -40,8 +40,8 @@ if [[ $DOSETUPTWO =~ "y" ]] ; then
 
 dashdiamond-cli stop > /dev/null 2>&1
 sleep 2
-wget http://217.69.14.34/files/dashdiamondd -O /usr/local/bin/dashdiamondd
-wget http://217.69.14.34/files/dashdiamond-cli -O /usr/local/bin/dashdiamond-cli
+wget https://github.com/Dash-Diamond/DASHD/releases/download/v1.1.0.0/DASHD-1.1.0.0-Linux.zip
+unzip DASHD-1.1.0.0-Linux.zip
 chmod +x /usr/local/bin/dashdiamond*
 
 fi
@@ -101,4 +101,3 @@ echo "YOUR IP = $IP:$PORT"
 echo "YOUR PRIVKEY = $PRIVKEY"
 echo "##########################"
 echo ""
-
