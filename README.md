@@ -40,7 +40,7 @@ To install Dashdiamond(DASHD) Masternode use the following command:
 
 - Enjoy
 
-check your masternode status using `ucr-cli getmasternodestatus` after run it from local wallet
+check your masternode status using `dashdiamond-cli getmasternodestatus` after run it from local wallet
 
 If you still facing any issues then join our <a href="https://discordapp.com/invite/JWkvmNyNgc">Discord server</a> for support, We available 24 hour for support you.
 
