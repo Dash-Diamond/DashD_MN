@@ -383,15 +383,15 @@ clear
 }
 
 function set_scripts_and_aliases() {
-cat << EOF > /root/dashd-general-info
+cat << EOF > /root/dashdiamond-general-info
 echo -e "\n\n${BLUE}=======================================================================================================${NC}\n"
 echo -e "${GREEN}$PROJECT_NAME General Info: ${NC}"
 $COIN_CLI getinfo
 echo -e "\n${BLUE}=======================================================================================================${NC}\n"
 EOF
-chmod +x /root/dashd-general-info
+chmod +x /root/dashdiamond-general-info
 
-cat << EOF > /root/dashd-fee-info
+cat << EOF > /root/dashdiamond-fee-info
 echo -e "\n\n${BLUE}=======================================================================================================${NC}\n"
 echo -e "${GREEN}$PROJECT_NAME Fee Info: ${NC}"
 $COIN_CLI getfeeinfo 100
@@ -399,15 +399,15 @@ echo -e "\n${BLUE}==============================================================
 EOF
 chmod +x /root/dashd-fee-info
 
-cat << EOF > /root/dashd-networkinfo
+cat << EOF > /root/dashdiamond-networkinfo
 echo -e "\n\n${BLUE}=======================================================================================================${NC}\n"
 echo -e "${GREEN}$PROJECT_NAME Network Info: ${NC}"
 $COIN_CLI getnetworkinfo
 echo -e "\n${BLUE}=======================================================================================================${NC}\n"
 EOF
-chmod +x /root/ucr-networkinfo
+chmod +x /root/dashdiamond-networkinfo
 
-cat << EOF > /root/dashd-masternode-stats
+cat << EOF > /root/dashdiamond-masternode-stats
 echo -e "\n\n${BLUE}=======================================================================================================${NC}\n"
 echo -e "${GREEN}Last Block: ${NC}"
 $COIN_CLI getblockcount
@@ -417,14 +417,14 @@ echo -e "\n${GREEN}Masternode Status: ${NC}"
 $COIN_CLI getmasternodestatus
 echo -e "\n${BLUE}=======================================================================================================${NC}\n"
 EOF
-chmod +x /root/dashd-masternode-stats
+chmod +x /root/dashdiamond-masternode-stats
 
 cp /root/.bashrc /root/.bashrc.backup
 sed '/feestats/d' /root/.bashrc | sed '/networkstats/d' | sed '/mnstats/d' | sed '/ucrinfo/d' > /root/tmp
 mv /root/tmp /root/.bashrc
-echo -e "alias feestats='/root/ucr-fee-info'" >> /root/.bashrc
-echo -e "alias networkstats='/root/ucr-networkinfo'" >> /root/.bashrc
-echo -e "alias mnstats='/root/ucr-masternode-stats'" >> /root/.bashrc
+echo -e "alias feestats='/root/dashdiamond-fee-info'" >> /root/.bashrc
+echo -e "alias networkstats='/root/dashdiamond-networkinfo'" >> /root/.bashrc
+echo -e "alias mnstats='/root/dashdiamond-masternode-stats'" >> /root/.bashrc
 exec bash
 }
 
