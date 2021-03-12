@@ -40,8 +40,8 @@ if [[ $DOSETUPTWO =~ "y" ]] ; then
 
 dashdiamond-cli stop > /dev/null 2>&1
 sleep 2
-wget https://github.com/Dash-Diamond/DASHD/releases/download/v1.1.0.0/DASHD-1.1.0.0-Linux.zip
-unzip DASHD-1.1.0.0-Linux.zip
+wget https://github.com/Dash-Diamond/DASHD/releases/download/v2.0.0.0/DASHD-2.0.0.0-Linux.zip
+unzip DASHD-2.0.0.0-Linux.zip
 chmod +x /usr/local/bin/dashdiamond*
 
 fi
