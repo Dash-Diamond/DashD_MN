@@ -4,11 +4,11 @@ Dash Diamond MN setup
 # Step 1
 
 1. Create account address - use a label such as Masternode1
-2. Send 1,000 DASHD to the address you created
+2. Send DASHD collateral amount to the address you created(Check reward table and match with explorer blocks to know about current collateral amount)
 3. Wait approximately 1 minute and open the debug console under the Tools menu
-4. Enter - ```masternode genkey``` - save this for later, you'll need it
-5. Enter -  ```masternode outputs```
-6. Save your TX and INDEX number from masternode outputs command
+4. Enter - ```createmasternodekey``` - save this for later, you'll need it
+5. Enter -  ```getmasternodeoutputs```
+6. Save your TX and INDEX number from ``getmasternodeoutputs`` command
 7. Close the wallet
 
 # Step 2
