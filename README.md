@@ -22,8 +22,12 @@ DashDiamond masternode setup
 
 1. DashDiamond(DASHD) for Collateral <br>
 (You can buy DASHD from exchange for collateral) <br>
-***•https://graviex.net/markets/dashdbtc <br>
+***•https://dex.heliobank.net/market/BIRAKE.DASHD_BIRAKE.BTC <br>
+•https://crex24.com/exchange/DASHD-BTC <br>
+•https://graviex.net/markets/dashdbtc <br>
 •https://graviex.net/markets/dashdeth <br>***
+Also you can check MNO to know more details:
+***https://masternodes.online/currencies/DASHD***
 
 2. Download Local Wallet for your operating system: : https://github.com/Dash-Diamond/DASHD/releases
 
