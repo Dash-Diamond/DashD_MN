@@ -4,7 +4,8 @@ Dash Diamond MN setup
 # Step 1
 
 1. Create account address - use a label such as Masternode1
-2. Send DASHD collateral amount to the address you created(Check reward table and match with explorer blocks to know about current collateral amount)
+2. Send DASHD collateral amount to the address you created(Check reward table and match with explorer blocks to know about current collateral amount or check MNO directly)
+***MNO: https://masternodes.online/currencies/DASHD***
 3. Wait approximately 1 minute and open the debug console under the Tools menu
 4. Enter - ```createmasternodekey``` - save this for later, you'll need it
 5. Enter -  ```getmasternodeoutputs```
