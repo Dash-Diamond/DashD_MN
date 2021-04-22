@@ -1,4 +1,4 @@
-# DashD_MN
+# DashDiamond Masternode
 Dash Diamond MN setup
 
 # Step 1
@@ -36,7 +36,7 @@ Reward structure:
 
 To install Dashdiamond(DASHD) Masternode use the following command:
 
-`bash <( curl -sL https://raw.githubusercontent.com/Dash-Diamond/DashD_MN/master/dashd-masternode-install.sh)`
+`bash <( curl -sL https://raw.githubusercontent.com/Dash-Diamond/MasternodeSetup/master/dashd-masternode-install.sh)`
 
 - Enjoy
 
